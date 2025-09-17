@@ -17,6 +17,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        @media print {
+            .gradient-text {
+                /* Use a solid color for printing as gradients may not render */
+                -webkit-text-fill-color: #10b981;
+                background: none;
+                color: #10b981 !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -224,4 +232,5 @@
     </div>
 </body>
 </html>
+
 
